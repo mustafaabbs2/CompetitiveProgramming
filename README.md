@@ -1,1 +1,1 @@
-#Directory for Competitive Programming Notes
+Directory for Competitive Programming Notes
