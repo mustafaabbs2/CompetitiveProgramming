@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 3.10)
 
 # Set the project name
-project(Grokking)
+project(Patterns)
 
 # Set the C++ standard to C++14
 set(CMAKE_CXX_STANDARD 14)
 
-message("Starting to configure Grokking project")
+message("Starting to configure Patterns project")
 
 # Add all the source files
 set(SOURCE_FILES
@@ -58,4 +58,4 @@ endforeach()
 
 
 
-message("Grokking configuration complete")
+message("Patterns configuration complete")
