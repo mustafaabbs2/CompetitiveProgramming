@@ -15,8 +15,7 @@ static void isHappy(int x)
     int fast, slow;
     slow = x;
 
-    auto findSum = [](int x)
-    {
+    auto findSum = [](int x) {
         int sum = 0;
         int sqd;
         while (x > 0)
