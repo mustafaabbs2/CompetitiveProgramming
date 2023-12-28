@@ -1,5 +1,3 @@
-using namespace std;
-
 #include <iostream>
 #include <queue>
 
@@ -43,20 +41,20 @@ public:
 class LevelOrderTraversal
 {
 public:
-    static vector<vector<int>> traverse(TreeNode* root)
+    static std::vector<std::vector<int>> traverse(TreeNode* root)
     {
-        vector<vector<int>> result;
+        std::vector<std::vector<int>> result;
         if (root == nullptr)
         {
             return result;
         }
 
-        queue<TreeNode*> queue;
+        std::queue<TreeNode*> queue;
         queue.push(root);
         while (!queue.empty())
         {
             int levelSize = queue.size();
-            vector<int> currentLevel;
+            std::vector<int> currentLevel;
             for (int i = 0; i < levelSize; i++)
             {
                 TreeNode* currentNode = queue.front();
@@ -88,15 +86,15 @@ int main(int argc, char* argv[])
     root->left->left = new TreeNode(9);
     root->right->left = new TreeNode(10);
     root->right->right = new TreeNode(5);
-    vector<vector<int>> result = LevelOrderTraversal::traverse(root);
-    cout << "Level order traversal: ";
+    std::vector<std::vector<int>> result = LevelOrderTraversal::traverse(root);
+    std::cout << "Level order traversal: ";
     for (auto vec : result)
     {
         for (auto num : vec)
         {
-            cout << num << " ";
+            std::cout << num << " ";
         }
-        cout << endl;
+        std::cout << std::endl;
     }
 }
 

@@ -1,5 +1,3 @@
-using namespace std;
-
 #include <iostream>
 #include <queue>
 
@@ -20,15 +18,15 @@ public:
 class LevelAverage
 {
 public:
-    static vector<double> findLevelAverages(TreeNode* root)
+    static std::vector<double> findLevelAverages(TreeNode* root)
     {
-        vector<double> result;
+        std::vector<double> result;
         if (root == nullptr)
         {
             return result;
         }
 
-        queue<TreeNode*> queue;
+        std::queue<TreeNode*> queue;
         queue.push(root);
         while (!queue.empty())
         {
@@ -67,10 +65,14 @@ int main(int argc, char* argv[])
     root->left->right = new TreeNode(2);
     root->right->left = new TreeNode(10);
     root->right->right = new TreeNode(5);
-    vector<double> result = LevelAverage::findLevelAverages(root);
-    cout << "Level averages are: ";
+    std::vector<double> result = LevelAverage::findLevelAverages(root);
+    std::cout << "Level averages are: ";
     for (auto num : result)
     {
-        cout << num << " ";
+        std::cout << num << " ";
     }
 }
+
+//   12
+//  7 1
+// 9 2 10 5

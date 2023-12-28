@@ -2,13 +2,10 @@
 #include <iostream>
 #include <queue>
 
-
 // To do a reverse level order, you just need to add your items in the reverse
 // order - i.e. so the last thing you add comes first. This can be done with a
 // deque, where you add to the front. Insertion and deletion can happen from
 // both ends.
-
-using namespace std;
 
 class TreeNode
 {
@@ -28,22 +25,22 @@ class ReverseLevelOrderTraversal
 {
 
 public:
-    static deque<vector<int>> traverse(TreeNode* root)
+    static std::deque<std::vector<int>> traverse(TreeNode* root)
     {
-        deque<vector<int>> result = deque<vector<int>>();
+        std::deque<std::vector<int>> result = std::deque<std::vector<int>>();
 
         if (root == nullptr)
         {
             return result;
         }
 
-        queue<TreeNode*> queue;
+        std::queue<TreeNode*> queue;
         queue.push(root);
 
         while (!queue.empty())
         {
             int levelSize = queue.size();
-            vector<int> currentLevel;
+            std::vector<int> currentLevel;
 
             for (int i = 0; i < levelSize; i++)
             {
@@ -76,14 +73,14 @@ int main(int argc, char* argv[])
     root->right->left = new TreeNode(10);
     root->right->right = new TreeNode(5);
     auto result = ReverseLevelOrderTraversal::traverse(root);
-    cout << "Level order traversal: ";
+    std::cout << "Level order traversal: ";
     for (auto vec : result)
     {
         for (auto num : vec)
         {
-            cout << num << " ";
+            std::cout << num << " ";
         }
-        cout << endl;
+        std::cout << std::endl;
     }
 }
 
