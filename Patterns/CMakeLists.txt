@@ -38,9 +38,10 @@ set(SOURCE_FILES
     TreeDFS/DFSTraversals.cpp
     TreeDFS/DFSMaxDepth.cpp
     TreeDFS/FindSimilarLeaves.cpp
+    TreeDFS/CountGoodNodes.cpp
+    TreeDFS/PathSumAnyPath.cpp
 
-
-
+    HeapTrees/KthLargest.cpp
 
     TwoPointers/PairWithTarget.cpp
     TwoPointers/RemoveDuplicates.cpp
