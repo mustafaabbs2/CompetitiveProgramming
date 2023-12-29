@@ -37,6 +37,8 @@ set(SOURCE_FILES
     TreeDFS/DFSPathSum.cpp
     TreeDFS/DFSTraversals.cpp
     TreeDFS/DFSMaxDepth.cpp
+    TreeDFS/FindSimilarLeaves.cpp
+
 
 
 
