@@ -35,6 +35,10 @@ set(SOURCE_FILES
 
     TreeDFS/DFSAllPaths.cpp
     TreeDFS/DFSPathSum.cpp
+    TreeDFS/DFSTraversals.cpp
+    TreeDFS/DFSMaxDepth.cpp
+
+
 
     TwoPointers/PairWithTarget.cpp
     TwoPointers/RemoveDuplicates.cpp
