@@ -5,7 +5,7 @@
             "name": "Mac",
             "type": "cppdbg",
             "request": "launch",
-            "program": "debug/${fileBasenameNoExtension}.out",
+            "program": "${workspaceFolder}/debug/${fileBasenameNoExtension}.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
