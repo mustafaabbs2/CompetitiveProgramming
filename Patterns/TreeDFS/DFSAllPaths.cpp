@@ -1,8 +1,8 @@
-using namespace std;
 
 #include <iostream>
 #include <vector>
 
+using namespace std;
 class TreeNode
 {
 public:

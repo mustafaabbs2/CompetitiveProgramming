@@ -35,6 +35,18 @@ set(SOURCE_FILES
 
     TreeDFS/DFSAllPaths.cpp
     TreeDFS/DFSPathSum.cpp
+    TreeDFS/DFSTraversals.cpp
+    TreeDFS/DFSMaxDepth.cpp
+    TreeDFS/FindSimilarLeaves.cpp
+    TreeDFS/CountGoodNodes.cpp
+    TreeDFS/PathSumAnyPath.cpp
+
+    GraphDFS/NumOfCities.cpp
+    GraphDFS/VisitAllRooms.cpp
+
+    HeapTrees/KthLargest.cpp
+
+    BinarySearch/SearchBST.cpp
 
     TwoPointers/PairWithTarget.cpp
     TwoPointers/RemoveDuplicates.cpp
