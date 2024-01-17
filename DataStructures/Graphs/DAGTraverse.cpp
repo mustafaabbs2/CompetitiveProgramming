@@ -2,6 +2,7 @@
 #include <unordered_map>
 #include <vector>
 
+//traverse DAG with DFS
 
 // Node represents a node in the DAG
 struct Node
@@ -81,6 +82,14 @@ int main()
     std::cout << "DAG traversal: ";
     dag.traverseDAG();
     std::cout << std::endl;
+
+
+    //1
+    
+    //2  3
+
+    //4   5
+
 
     return 0;
 }

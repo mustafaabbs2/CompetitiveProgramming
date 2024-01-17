@@ -17,9 +17,9 @@ set(CMAKE_C_STANDARD 11)
 # Add the C++ source files
 set(CPP_SOURCES
     
-    Graphs/BFS.cpp
-    Graphs/DFS.cpp
-    Graphs/DAG.cpp
+    Graphs/GraphBFS.cpp
+    Graphs/GraphDFS.cpp
+    Graphs/DAGTraverse.cpp
 
     Stack/Stack.cpp
 
